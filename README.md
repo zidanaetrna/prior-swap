@@ -1,3 +1,6 @@
+Below, I’ll provide a README.md file tailored to your Prior Testnet Auto-bot script, along with an MIT License file. These will be formatted as markdown code blocks that you can copy into separate files in your project directory.
+README.md
+markdown
 # Prior Testnet Auto-bot
 
 A Node.js script for automating token swaps on the Base Sepolia testnet using ethers.js v6. This bot interacts with a specific contract to swap PRIOR tokens to either USDT or USDC.
@@ -6,7 +9,7 @@ A Node.js script for automating token swaps on the Base Sepolia testnet using et
 
 - **Single Swap**: Perform a one-time swap of PRIOR tokens to USDT or USDC.
 - **Automatic Swap (Spam)**: Continuously spam swap transactions as fast as possible until the balance runs out.
-- **Daily Swap**: Execute 27 swaps evenly distributed over 24 hours (approximately every 13 minutes).
+- **Daily Swap**: Execute 27 swaps evenly distributed over 24 hours (approximately every 53 minutes).
 
 ## Prerequisites
 
@@ -23,14 +26,17 @@ A Node.js script for automating token swaps on the Base Sepolia testnet using et
 2. **Install Dependencies**:
    ```bash
    npm install ethers dotenv
-Set Up Environment:
+   ```
+3. **Set Up Environment**:
 Create a .env file in the project root with your private key:
 plaintext
 PRIVATE_KEY=your_private_key_here
-Usage
+
+4.**Usage**:
 Run the Script:
-bash
+```bash
 node index.js
+```
 Follow Prompts:
 Choice (1-3):
 1: Single Swap
@@ -38,16 +44,19 @@ Choice (1-3):
 3: Automatic Swap daily (27 times in 24 hours)
 Token: Enter USDT or USDC
 Amount: Enter the amount of PRIOR tokens to swap (e.g., 0.01)
-Configuration
+
+## Configuration
 RPC_URL: https://sepolia.base.org (Base Sepolia testnet)
 CONTRACT_ADDRESS: 0x0f1DADEcc263eB79AE3e4db0d57c49a8b6178B0B
 PRIOR_TOKEN: 0xc19Ec2EEBB009b2422514C51F9118026f1cD89ba
 Swap Function Selector: 0xf3b68002 (takes a uint256 amount parameter)
-Notes
+
+## Notes
 The swap function (0xf3b68002) is assumed to handle token selection internally. If it requires a token address parameter, modify the singleSwap function accordingly.
 Gas limit is set to 200,000; adjust if needed based on transaction requirements.
 For testing Option 3, you can reduce the delay (e.g., to 10 seconds) by editing delayMs in automaticSwapDaily.
-License
+
+## License
 This project is licensed under the MIT License. See the LICENSE (./LICENSE) file for details.
 Author
 Created by: aetrna
