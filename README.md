@@ -24,7 +24,7 @@ A Node.js script for automating token swaps on the Base Sepolia testnet using et
 
 2. **Install Dependencies**:
    ```bash
-   npm install ethers dotenv
+   npm install ethers@6.13.5 dotenv@16.4.7
    ```
 3. **Set Up Environment**:
 Create a .env file in the project root with your private key:
