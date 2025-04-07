@@ -1,6 +1,3 @@
-Below, I’ll provide a README.md file tailored to your Prior Testnet Auto-bot script, along with an MIT License file. These will be formatted as markdown code blocks that you can copy into separate files in your project directory.
-README.md
-markdown
 # Prior Testnet Auto-bot
 
 A Node.js script for automating token swaps on the Base Sepolia testnet using ethers.js v6. This bot interacts with a specific contract to swap PRIOR tokens to either USDT or USDC.
