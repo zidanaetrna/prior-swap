@@ -18,7 +18,9 @@ A Node.js script for automating token swaps on the Base Sepolia testnet using et
 ## Installation
 
 1. **Clone or Download**:
-   - Clone this repository or download the script files.
+   ```bash
+   git clone https://github.com/zidanaetrna/prior-swap.git
+   ```
 
 2. **Install Dependencies**:
    ```bash
