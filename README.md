@@ -6,7 +6,7 @@ A Node.js script for automating token swaps on the Base Sepolia testnet using et
 
 - **Single Swap**: Perform a one-time swap of PRIOR tokens to USDT or USDC.
 - **Automatic Swap (Spam)**: Continuously spam swap transactions as fast as possible until the balance runs out.
-- **Daily Swap**: Execute 27 swaps evenly distributed over 24 hours (approximately every 53 minutes).
+- **Daily Swap**: Execute 27 swaps evenly distributed over 24 hours (approximately every 13 minutes).
 
 ## Prerequisites
 
