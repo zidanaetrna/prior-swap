@@ -43,10 +43,10 @@ Token: Enter USDT or USDC
 Amount: Enter the amount of PRIOR tokens to swap (e.g., 0.01)
 
 ## Configuration
-**RPC_URL**: https://sepolia.base.org (Base Sepolia testnet)
-**CONTRACT_ADDRESS**: 0x0f1DADEcc263eB79AE3e4db0d57c49a8b6178B0B
-**PRIOR_TOKEN**: 0xc19Ec2EEBB009b2422514C51F9118026f1cD89ba
-**Swap Function Selector**: 0xf3b68002 (takes a uint256 amount parameter)
+- **RPC_URL**: https://sepolia.base.org (Base Sepolia testnet)
+- **CONTRACT_ADDRESS**: 0x0f1DADEcc263eB79AE3e4db0d57c49a8b6178B0B
+- **PRIOR_TOKEN**: 0xc19Ec2EEBB009b2422514C51F9118026f1cD89ba
+- **Swap Function Selector**: 0xf3b68002 (takes a uint256 amount parameter)
 
 ## Notes
 The swap function (0xf3b68002) is assumed to handle token selection internally. If it requires a token address parameter, modify the singleSwap function accordingly.
